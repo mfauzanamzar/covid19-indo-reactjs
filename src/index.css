@@ -44,7 +44,12 @@ code {
 }
 
 .center-text img{
-  width: 200px;
+  width: 150px;
+  padding: 10px;
+}
+
+.left-text img{
+  width: 40px;
 }
 
 /*covid*/
@@ -394,6 +399,11 @@ table tr:last-child td:last-child {
     margin: 30px
   }
 
+  
+ .left-text, .center-text{
+  margin: 0 30px;
+}
+
 }
 
 @media only screen and (max-device-width: 375px){
@@ -420,6 +430,15 @@ table tr:last-child td:last-child {
 .provinsi{
   margin: 15px;
 }
+
+.left-text img{
+  width: 40px;
+  padding: 10px 0px;
+}
+
+.left-text, .center-text{
+  margin: 0 20px;
+}
 }
 
 
@@ -444,6 +463,9 @@ table tr:last-child td:last-child {
   .center-text img{
   width: 90px;
   }
+
+  
+  
 
   .provinsi{
     margin: auto;

@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Visitor from './components/Visitor';
 
 
 export default class App extends Component {
@@ -12,6 +13,7 @@ export default class App extends Component {
       <Router>
       <div>
         <Navbar />
+       
         <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/home' exact component={Home} />
