@@ -22,6 +22,7 @@ code {
 
 .mobileNavbar{
   display: none;
+  background-color: #053742;
 
  
 }
@@ -31,6 +32,7 @@ code {
   justify-content: space-between;
  align-items: center;
   color: white;
+  background-color: #053742;
  
 }
 .right-text ul, li{
@@ -59,6 +61,9 @@ code {
   width: 40px;
 }
 
+.left-text, .center-text, .right-text{
+  margin: 0 50px;
+}
 /*covid*/
 
 .container{
@@ -68,6 +73,7 @@ code {
 
 .covid{
   margin-bottom: 50px;
+  margin: 0 50px;
 }
 
 .header{
@@ -194,7 +200,8 @@ display: none;
 
 /*provinsi*/
 .provinsi{
-   margin: auto;
+    margin: 0 50px;
+
    padding-bottom: 30px;
    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%) ;
   
@@ -212,7 +219,7 @@ display: none;
 .tabel{
   border-radius: 10px;
   border-collapse: collapse;
-  width: 1100px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 
