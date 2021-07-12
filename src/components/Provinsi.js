@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
 import axios from 'axios';
-import { FacebookIcon, WhatsappIcon, WhatsappShareButton } from 'react-share';
+import { FacebookIcon, FacebookShareButton, WhatsappIcon, WhatsappShareButton } from 'react-share';
 
 
 const Provinsi = () => {
@@ -35,7 +35,14 @@ const Provinsi = () => {
                                 <WhatsappIcon round={true} className="wa-icon" />
                             </WhatsappShareButton>
                         </div>
-                        <div className="fb"><FacebookIcon round={true} className="fb-icon" /></div>
+                        <div className="fb">
+                            <FacebookShareButton
+                            url="https://indonesia-covid-19.netlify.app/"
+                            quote="Jumlah Covid-19 Indonesia" 
+                            >
+                            <FacebookIcon round={true} className="fb-icon" />
+                            </FacebookShareButton>
+                            </div>
 
                     </div>
                 </div>
