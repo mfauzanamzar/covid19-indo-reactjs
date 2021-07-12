@@ -200,11 +200,10 @@ display: none;
 
 /*provinsi*/
 .provinsi{
-    margin: 0 50px;
-
+   margin: 0 50px;
+   margin-top: 50px;
    padding-bottom: 30px;
    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%) ;
-  
    border-radius: 10px;
    margin-bottom: 50px;
    
@@ -215,6 +214,38 @@ display: none;
   padding-top: 20px;
 }
 
+.provHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+.share{
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color:#053742;
+  display: flex;
+  align-items: center;
+}
+
+.text a{
+  color: white;
+  font-weight: 500;
+}
+
+.wa, .fb{
+  padding-left: 10px;
+  
+}
+
+.wa-icon, .fb-icon{
+  width: 40px;
+  
+
+}
 
 .tabel{
   border-radius: 10px;
@@ -380,6 +411,14 @@ table tr:last-child td:last-child {
     font-size: 15px;
   }
 
+  .share{
+    margin-right: 35px;
+  }
+
+  .wa-icon, .fb-icon{
+    width: 30px;
+  }
+
 }
 
 @media only screen and (max-device-width: 425px){
@@ -410,7 +449,7 @@ table tr:last-child td:last-child {
 
   .provinsi h1{
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 30px;
   
   }
   .navbar{
@@ -477,6 +516,22 @@ table tr:last-child td:last-child {
   margin: 0 30px;
 }
 
+.wa-icon, .fb-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.share{
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.share .text a{
+  font-size: 12px;
+ 
+}
+
+
 }
 
 @media only screen and (max-device-width: 375px){
@@ -513,6 +568,10 @@ table tr:last-child td:last-child {
 .about{
   margin: 30px;
 }
+
+.share{
+  margin-right: 15px;
+}
 }
 
 
@@ -545,6 +604,10 @@ table tr:last-child td:last-child {
   
     
  }
+
+ .share{
+  margin-right: 10px;
+}
 
 
  
