@@ -14,8 +14,16 @@ code {
 
 /*Navbar*/
 
+
+
 .navbar-container{
   background-color: #053742;
+}
+
+.mobileNavbar{
+  display: none;
+
+ 
 }
 
 .navbar{
@@ -24,7 +32,6 @@ code {
  align-items: center;
   color: white;
  
-
 }
 .right-text ul, li{
   display: flex;
@@ -279,23 +286,24 @@ table tr:last-child td:last-child {
 
 .about h1{
   padding: 10px 20px;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .header-about{
   background-color: #053742;
-  width:fit-content;
+  width: 300px;
   color: white;
-  margin-left: 30px;
+  margin: 0 auto;
   border-radius: 10px;
   align-items: center;
+  text-align: center;
  
 }
 
 .text-about{
   margin: 0 50px;
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -303,6 +311,10 @@ table tr:last-child td:last-child {
  .container{
    width: 1024px;
    
+ }
+
+ .about{
+   margin: 50px;
  }
 
  .tabel{
@@ -317,9 +329,10 @@ table tr:last-child td:last-child {
    margin: 50px
  }
 
- .left-text, .right-text{
-   margin: 0 50px;
- }
+ .left-text, .center-text, .right-text{
+  margin: 0 50px;
+}
+
 }
 
 @media only screen  and (max-device-width: 768px) {
@@ -352,6 +365,12 @@ table tr:last-child td:last-child {
   .box{
     margin: 20px auto;
     width: 400px;
+  }
+
+  
+
+  .text-about{
+    font-size: 15px;
   }
 
 }
@@ -387,9 +406,42 @@ table tr:last-child td:last-child {
     padding-left: 10px;
   
   }
-  .right-text{
+  .navbar{
     display: none;
   }
+  .mobileNavbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+  }
+
+  .listMenu ul li a{
+   padding: 10px;
+    text-decoration: none;
+    color:#053742;
+    font-weight: 500;
+  }
+
+  .listMenu ul{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 53px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%) ;
+  }
+
+  .listMenu ul li {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .listMenu{
+    text-align: left;
+  }
+
+ 
 
   .covid{
     margin: 30px;
@@ -400,7 +452,21 @@ table tr:last-child td:last-child {
   }
 
   
- .left-text, .center-text{
+ .left-text, .center-text, .right-text{
+  margin: 0 30px;
+}
+
+.header-about{
+  background-color: #053742;
+  width: auto;
+  color: white;
+  margin : 0 30px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.text-about{
+  font-size: 13px;
   margin: 0 30px;
 }
 
@@ -420,9 +486,6 @@ table tr:last-child td:last-child {
  width: 130px;
  }
 
- .right-text{
-   display: none;
- }
  .covid{
   margin: 15px;
 }
@@ -438,6 +501,10 @@ table tr:last-child td:last-child {
 
 .left-text, .center-text{
   margin: 0 20px;
+}
+
+.about{
+  margin: 30px;
 }
 }
 
@@ -460,13 +527,10 @@ table tr:last-child td:last-child {
    margin-left: 20px;
  }
  
-  .center-text img{
-  width: 90px;
-  }
-
-  
-  
-
+ .center-text{
+   margin: 0px;
+ }
+ 
   .provinsi{
     margin: auto;
    

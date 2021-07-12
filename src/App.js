@@ -1,10 +1,10 @@
 import './App.css';
 import React, { Component } from 'react'
 import Home from './components/Home'
-import Navbar from './components/Navbar'
+import Navbar from './components/NavBar/Navbar'
 import About from './components/About'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Visitor from './components/Visitor';
+
 
 
 export default class App extends Component {
