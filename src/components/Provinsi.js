@@ -30,7 +30,8 @@ const Provinsi = () => {
                         <div className="wa">
                             <WhatsappShareButton
                                 url="https://indonesia-covid-19.netlify.app/"
-                                title="Jumlah Covid-19 Indonesia" 
+                                title="Jumlah Kasus Covid-19 Indonesia" 
+                                
                                >
                                 <WhatsappIcon round={true} className="wa-icon" />
                             </WhatsappShareButton>
@@ -38,7 +39,7 @@ const Provinsi = () => {
                         <div className="fb">
                             <FacebookShareButton
                             url="https://indonesia-covid-19.netlify.app/"
-                            quote="Jumlah Covid-19 Indonesia" 
+                            quote="Jumlah Kasus Covid-19 Indonesia" 
                             >
                             <FacebookIcon round={true} className="fb-icon" />
                             </FacebookShareButton>
