@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <Navigation/>
-            <MobileNavigation/>
+         
         </div>
     )
 }

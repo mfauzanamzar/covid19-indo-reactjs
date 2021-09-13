@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../index.css';
 import axios from 'axios';
 import Moment from 'react-moment';
+import logo from '../pictures/logocov2.png'
 
 const Covid = () => {
     const [data, setData] = useState([])
@@ -25,7 +26,7 @@ const Covid = () => {
             <div className="covid">
                 <div className="top">
                     <div className="header">
-                        <h1>Covid-19 Indonesia</h1>
+                        <img className="logo-header" src={logo} alt="logo" />
                         <div className="tanggal">  <a><Moment format="dddd, DD MMM yyyy">{data.lastUpdate}</Moment></a>
                             </div>
                         <div className="tanggal-mbl">
