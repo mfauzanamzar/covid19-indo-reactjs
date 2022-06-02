@@ -1,23 +1,21 @@
-import './App.css';
-import React, { Component } from 'react'
-import Home from './components/Home'
-import Navbar from './components/NavBar/Navbar'
-import About from './components/About'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-
+import "./App.css";
+import React, { Component } from "react";
+import Appbar from "./components/Appbar";
+import Content from "./components/Content";
+import Hero from "./components/Hero";
+import CaseByLocation from "./components/CaseByLocation";
 
 export default class App extends Component {
   render() {
     return (
-      <Router>
-      <div>
-        <Navbar />
-        <Home/>
+      <div className="App">
+        <div className="App-banner">
+          <Appbar />
+          <Hero />
+        </div>
+        <CaseByLocation/>
+        <Content />
       </div>
-      </Router>
-    )
+    );
   }
 }
-
-
